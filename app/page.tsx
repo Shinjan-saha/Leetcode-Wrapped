@@ -30,7 +30,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#1A1A1A] text-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
-        {/* Header Section */}
+       
         <div className="text-center space-y-4 mb-16">
           <div className="flex justify-center mb-6">
             <Brain className="w-16 h-16 text-[#FFD700]" />
@@ -41,7 +41,7 @@ export default function HomePage() {
           <p className="text-xl text-gray-400">Celebrate Your Coding Journey</p>
         </div>
 
-        {/* Search Section */}
+       
         <div className="max-w-xl mx-auto mb-16">
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -73,10 +73,10 @@ export default function HomePage() {
           )}
         </div>
 
-        {/* Stats Section */}
+       
         {userData && (
           <div className="space-y-8">
-            {/* Profile Card */}
+            
             <div className="bg-[#2A2A2A] rounded-2xl p-8 border-2 border-[#FFD700]">
               <div className="flex items-center gap-6 mb-8">
                 <div className="w-20 h-20 bg-[#FFD700] rounded-full flex items-center justify-center">
@@ -113,7 +113,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Problem Distribution */}
+           
             <div className="bg-[#2A2A2A] rounded-2xl p-8 border-2 border-[#FFD700]">
               <h3 className="text-2xl font-bold mb-6 text-[#FFD700]">Problem Solving Distribution</h3>
               <div className="space-y-6">
