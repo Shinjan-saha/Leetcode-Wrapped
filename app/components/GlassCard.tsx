@@ -1,14 +1,21 @@
-import { ReactNode } from 'react';
+import React, { forwardRef } from 'react';
 
-interface GlassCardProps {
-  children: ReactNode;
+type GlassCardProps = {
   className?: string;
-}
+  children: React.ReactNode;
+};
 
-export function GlassCard({ children, className = '' }: GlassCardProps) {
-  return (
-    <div className={`bg-white/10 backdrop-blur-md border border-white/20 shadow-xl ${className}`}>
-      {children}
-    </div>
-  );
-}
+export const GlassCard = forwardRef<HTMLDivElement, GlassCardProps>(
+  ({ className = '', children }, ref) => {
+    return (
+      <div
+        ref={ref}
+        className={`bg-black/20 backdrop-blur-lg border border-white/10 rounded-lg p-6 ${className}`}
+      >
+        {children}
+      </div>
+    );
+  }
+);
+
+GlassCard.displayName = 'GlassCard';
