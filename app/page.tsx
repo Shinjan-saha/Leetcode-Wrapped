@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Trophy, Target, Award, Search, Code2, Brain } from 'lucide-react';
-import { GlassCard } from './components/Glasscard';
+import { GlassCard } from './components/GlassCard';
 import { StatsCard } from './components/StatsCard';
 import { CelebrationEffects } from './components/CelebrationEffect';
 
@@ -35,7 +35,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] relative overflow-hidden">
-      {/* Decorative background pattern */}
+     
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
           backgroundImage: `linear-gradient(30deg, #FFD700 12%, transparent 12.5%, transparent 87%, #FFD700 87.5%, #FFD700),
@@ -49,7 +49,7 @@ export default function HomePage() {
         }}></div>
       </div>
 
-      {/* Glassmorphism orbs */}
+     
       <div className="absolute top-20 -left-20 w-72 h-72 bg-[#FFD700] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
       <div className="absolute top-40 -right-20 w-72 h-72 bg-[#FFD700] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
       <div className="absolute -bottom-20 left-40 w-72 h-72 bg-[#FFD700] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>

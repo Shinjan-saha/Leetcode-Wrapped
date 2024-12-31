@@ -30,7 +30,7 @@ export function CelebrationEffects() {
 
   return (
     <div className="fixed inset-0 pointer-events-none z-50">
-      {/* Ribbons */}
+    
       <div className="absolute inset-0 animate-ribbons">
         {Array.from({ length: 6 }).map((_, i) => (
           <div
@@ -46,7 +46,7 @@ export function CelebrationEffects() {
         ))}
       </div>
 
-      {/* Stars */}
+     
       {stars.map((star) => (
         <div
           key={star.id}
@@ -72,7 +72,7 @@ export function CelebrationEffects() {
         </div>
       ))}
 
-      {/* Gift wrapper effect */}
+     
       <div className="absolute inset-x-0 top-0 animate-wrapper">
         <div className="h-1 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent" />
       </div>
